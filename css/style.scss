@@ -1,0 +1,152 @@
+// color
+$primaryColor: #cab2b2;
+$secondColor: #000000;
+$fromGradient: #90b4b3;
+// background-color
+$backgroundColorMain: #22323e;
+// fonts
+$primaryFont: 'Asap',
+sans-serif;
+$secondFont: 'Bevan',
+cursive;
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3em;
+    color: $primaryColor;
+    font: 1em $primaryFont;
+
+}
+section.opacity {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: all .95s ease;
+    transition: all .95s ease;
+    transition-delay: .63s;
+    opacity: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.none {
+        -webkit-transition: all .562s ease-out;
+        transition: all .562s ease-in-out;
+        opacity: 1;
+        width: 100%;
+        transition-delay: 1s;
+    }
+}
+.opacity1 {
+    background-image: url('../img/beautiful-girl-1703415_1920.jpg');
+}
+.opacity3 {
+    background-image: url('../img/fashion-1063100_1920.jpg');
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.7;
+    }
+ 
+
+}
+
+ul {
+    padding: 0;
+    margin-top: 0;
+    list-style-type: none;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    .welcome-title {
+        position: absolute;
+        color: $secondColor;
+        top: 50%;
+        left: 3%;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+}
+.navbar-list {
+    max-width: 900px;
+    li {
+        &.active {
+            border-bottom: 1px solid $fromGradient;
+        }
+        .list-link {
+            line-height: 2em;
+            font-family: $secondFont;
+           
+        }
+    }
+}
+
+.social-list a {
+    margin: 0.3em;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    background-color: $secondColor;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    z-index: 2;
+}
+
+.flex-container>div {
+    margin: 10px;
+    line-height: 55px;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+footer {
+    padding: 1em;
+    margin: 0;
+    background: #111020;
+    h6 {
+        margin: 0;
+       text-align: center;
+       font-size: 1.1em;
+    }
+}
+@media (min-width: 767px) {
+    .list-item {
+        float: left;
+        margin: 1em;
+        padding: 0;
+    }
+    header {
+        .welcome-title {
+            color: $primaryColor;
+           
+        }
+    }
+ 
+}
