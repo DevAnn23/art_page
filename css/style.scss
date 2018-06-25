@@ -55,6 +55,9 @@ section.opacity {
 .opacity1 {
     background-image: url('../img/beautiful-girl-1703415_1920.jpg');
 }
+.opacity2 {
+    background-image: url('../img/pink-roses-2533389_1920.jpg');
+}
 .opacity3 {
     background-image: url('../img/fashion-1063100_1920.jpg');
 }
@@ -85,10 +88,17 @@ header {
     .welcome-title {
         position: absolute;
         color: $secondColor;
+        
+       
         top: 50%;
         left: 3%;
         font-size: 1.5em;
         text-transform: uppercase;
+        h1{
+            background-color: $primaryColor;
+            padding: 0.5em;
+        }
+
     }
 }
 .navbar-list {
@@ -141,12 +151,6 @@ footer {
         float: left;
         margin: 1em;
         padding: 0;
-    }
-    header {
-        .welcome-title {
-            color: $primaryColor;
-           
-        }
     }
  
 }

@@ -43,6 +43,10 @@ section.opacity.none {
   background-image: url("../img/beautiful-girl-1703415_1920.jpg");
 }
 
+.opacity2 {
+  background-image: url("../img/pink-roses-2533389_1920.jpg");
+}
+
 .opacity3 {
   background-image: url("../img/fashion-1063100_1920.jpg");
 }
@@ -79,6 +83,11 @@ header .welcome-title {
   left: 3%;
   font-size: 1.5em;
   text-transform: uppercase;
+}
+
+header .welcome-title h1 {
+  background-color: #cab2b2;
+  padding: 0.5em;
 }
 
 .navbar-list {
@@ -132,9 +141,6 @@ footer h6 {
     float: left;
     margin: 1em;
     padding: 0;
-  }
-  header .welcome-title {
-    color: #cab2b2;
   }
 }
 /*# sourceMappingURL=style.css.map */
